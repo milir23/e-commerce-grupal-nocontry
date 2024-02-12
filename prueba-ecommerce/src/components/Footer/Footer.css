@@ -1,3 +1,18 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+  --fuente1: 'Roboto', sans-serif;
+  --colorverde: #D1CBB9;
+  --colorblanco: #FAFAFA; 
+  --colornaranja: #E5B97D;
+  --colorgris: #4C4B5E;
+  --colornegro: #0B1215;
+  
+
+}
+
+
 .footer-container {
     
     color: #333;
@@ -43,3 +58,6 @@
     margin-top: 20px;
   }
   
+  body{
+    background-color: var(--colorverde);
+  }

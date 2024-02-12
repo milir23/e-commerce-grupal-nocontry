@@ -1,11 +1,22 @@
 /* TarjetaEcommerce.css */
+:root {
+  --fuente1: 'Roboto', sans-serif;
+  --colorverde: #D1CBB9;
+  --colorblanco: #FAFAFA; 
+  --colornaranja: #E5B97D;
+  --colorgris: #4C4B5E;
+  --colornegro: #0B1215;
+  
+
+}
+
 .tarjeta-ecommerce {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  background-color: #fff;
+  background-color: var(--colorverde);
   width: 250px;
   margin: 10px;
 }

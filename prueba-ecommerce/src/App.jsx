@@ -8,15 +8,16 @@ import Footer from './components/Footer/Footer.jsx';
 // import Carrussel from './components/Carrussel/Carrussel.jsx';
 const App = () => {
   
-
+// SUBIR REPOSITORIO, ESO TENÉS QUE HACERR AMOROSA MIAA TE AMO
   return (
 
     <div>
       <Header />
+      {/* <Carrussel /> */}
       <Destacados />
       <Tarjetas />
       <Footer />
-      {/* <Carrussel /> */}
+      
       {/* <Login />  cómo hago aparecer el elemento*/}
       
     </div>

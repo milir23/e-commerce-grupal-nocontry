@@ -10,7 +10,7 @@ const Destacados = ({ onAgregarAlCarrito, onAgregarAFavoritos }) => {
 
   return (
     <div className="destacados-container">
-      <h2>Productos Destacados</h2>
+      <h2>Preparate para la temporada</h2>
       <div className="destacados-list">
         {destacadosItems.map((item) => (
           <div key={item.id} className="destacado-item">

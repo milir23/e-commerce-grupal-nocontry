@@ -1,12 +1,9 @@
 import React, { useEffect, useRef, useState, useInterval } from 'react'
-import { data } from './data.jsx';
-import './Carrusel.css';
+import { data } from '../assets/data';
 import { FaCircle } from "react-icons/fa";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { IoIosArrowDropleftCircle } from "react-icons/io";
-
-
-
+import '../carrousel/Carrousel.css'
 
 
 const Carrousel = () => {
