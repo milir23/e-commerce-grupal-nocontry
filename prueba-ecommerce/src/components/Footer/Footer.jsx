@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css';  
+import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
         <div className="brand-name">
-          <h1>E-Bike</h1>
+          <a href=""><h1><img src="./src/img/Logo1.png" alt="" className='imglogo'/></h1></a>
         </div>
         <div className="important-elements">
           <ul>
@@ -17,9 +17,9 @@ const Footer = () => {
         </div>
         <div className="social-media">
           {/* Puedes agregar iconos de redes sociales u otros elementos aquí */}
-          <a href="https://facebook.com"><i className="fab fa-facebook"></i></a>
-          <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
-          <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
+          <a href="https://facebook.com"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com"><i class="bi bi-twitter-x"></i></a>
         </div>
       </div>
       <div className="copyright">

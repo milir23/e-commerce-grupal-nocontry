@@ -1,16 +1,17 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
 :root {
   
 
-    --fuente1: 'Roboto', sans-serif;
-    --colorverde: #D1CBB9;
-    --colorblanco: #FAFAFA;
-    --colornaranja: #E5B97D;
+    --fuente:"Montserrat", sans-serif;
+   
+    --colorblanco: #FFFFFF;
+    --colorverde: #62ef3b;
     --colorgris: #4C4B5E;
+    --colorgrislinea: #8c8b9b;
     --colornegro: #0B1215;
 
 
@@ -23,9 +24,10 @@
 }
 
 body {
+    background-color: var(--colorblanco);
+    font-family: var(--fuente);
+   
     
-    font-family: var(--fuente1);
-    margin: 0px 20px 0px 20px;
 }
 
 
@@ -34,10 +36,11 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    margin: 40px 30px 40px 30px;
-    border-bottom: 1px solid #8c8b9b;
-    background-color: var(--colorverde);
+    margin: 20px 0px 5px 0px;
+    border-bottom: 1px solid var(--colornegro);
+    background-color: var(--colorblanco);
     padding: 0px 0px 10px 0px;
+    position: sticky;
 }
 
 .divlog {
@@ -52,15 +55,24 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 
+.ebike {
+    width: 180px;
+    height: 60px;
+    display:flex;
+    
+}
 .sec2 {
     display: flex;
     justify-content: center;
 }
 
 .margin {
-    color: var(--colorgris);
+    color: var(--colornegro);
+    font-size: 18px;
+    font-weight: 500;
     margin: 5px 30px 5px 30px;
     text-decoration: none;
     align-items: center;
@@ -93,7 +105,7 @@ body {
 .borde {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid var(--colorgris);
 
 }
 
@@ -105,21 +117,22 @@ body {
 }
 
 .margenbtn {
-    margin: 0px 25px 0px 70px;
+    margin: 0px 30px 0px 45px;
 }
 
 .form1 {
-    border: 1px solid var(--colorgris);
+    border: 2px solid var(--colorgris);
     background-color: var(--colorblanco);
     border-radius: 50px;
-    width: 230px;
-    height: 30px;
+    width: 330px;
+    height: 40px;
 
 }
 
 .icons1 {
     display: flex;
     align-items: center;
+    font-weight: 600;
 
 }
 
@@ -135,14 +148,46 @@ body {
     margin: 20px 20px 20px 25px;
     text-decoration: none;
     color: var(--colorgris);
-    font-weight: 600;
+    font-weight: bold;
     font-size: 20px;
-    position: absolute;
-    top: 25px;
+    position: sticky;
+    top: 19px;
+    left: 985px;
 
 }
 
 .inises {
+    font-weight: 500;
+    font-size:18px;
     text-decoration: none;
-    color: var(--colorgris);
+    color: var(--colornegro);
+}
+
+
+.sec1 a:hover,
+.margin:hover,
+.lupa:hover,
+.inises:hover,
+.iconstyle:hover {
+    color: var(--colorverde);
+    transition: color 0.3s ease-in-out;
+}
+
+
+.form1:hover {
+    border-color: var(--colorverde);
+    transition: border-color 0.3s ease-in-out;
+}
+
+
+.sec2:hover,
+.secmain3:hover {
+    background-color: var(--colorverde);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Agrega un hover sutil a los enlaces de navegación en el header */
+.navigate a:hover {
+    color: var(--colorverde);
+    transition: color 0.3s ease-in-out;
 }

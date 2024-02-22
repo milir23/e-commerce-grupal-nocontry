@@ -16,8 +16,8 @@ const Tarjetas = () => {
 
     return (
         <div className="org">
-            <div className="carrito">
-                <h2>Carrito de Compras</h2>
+             <div className="carrito">
+                <h2 className="exclusivo">E-xclusivos</h2>
                 <ul>
                     {carrito.map((item, index) => (
                         <li key={index}>
@@ -27,6 +27,7 @@ const Tarjetas = () => {
                     ))}
                 </ul>
             </div>
+
             <div className="contenedor-ecommerce">
                 <TarjetaEcommerce
                     nombre="Bicicleta"
@@ -50,7 +51,7 @@ const Tarjetas = () => {
                     onQuitarDelCarrito={() => quitarDelCarrito("Producto 3")}
                 />
                 <TarjetaEcommerce
-                    nombre="Llanta de bicicleta plegable"
+                    nombre="Llanta de bicicleta"
                     tipo="Llantas"
                     precio="59.99"
                     onAgregarAlCarrito={() => agregarAlCarrito("Producto 4")}
@@ -58,7 +59,9 @@ const Tarjetas = () => {
                 />
             </div>
 
-            
+           
+
+
         </div>
     );
 };
